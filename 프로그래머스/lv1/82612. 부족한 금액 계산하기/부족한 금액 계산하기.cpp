@@ -11,8 +11,8 @@ long long solution(int price, int money, int count)
         temp += price*i;
     }
     if(temp>money)
-        answer = abs(temp - money);
-    else if(temp <= money)
+        answer = temp - money;
+    else 
         answer = 0;
     
     return answer;
