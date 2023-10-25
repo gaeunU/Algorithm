@@ -1,26 +1,26 @@
-#include <iostream>
+#include<iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    string s;
-    
-    cin>>s;
-    
-    for(int i=0; i<s.size();i++){
-        
-        if(i == 10 || i==20 || i==30 || i==40|| i==50||
-        i ==60 || i==70 || i==80 || i==90)
-            cout<<""<<endl;
-            
-        cout<<s[i];
-        
-    }
-    
-    // 0123456789
-    // 10 11 12 13 14 15 16 17 18 19
-    // 20 21 22 --
-    
-    return 0;
+	//ios_base::sync_with_stdio(false);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+
+
+	string  str;
+
+	cin >> str;
+	int num = str.size();
+
+	for (int i = 0; i < num; i++) {
+		cout << str[i];
+		
+		if(i%10 == 9)cout << '\n';
+	}
+
+	
+
+	return 0;
 }
